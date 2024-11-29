@@ -1,3 +1,16 @@
+::-webkit-scrollbar{
+    width:8px
+}
+
+::-webkit-scrollbar-track{
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #305252;
+    border-radius: 4px;
+}
+
 header {
     position: sticky;
     z-index: 3;
@@ -16,6 +29,7 @@ header {
 
 body{
     margin: 0;
+    padding: 0;
 }
 
 .navbar{
@@ -34,22 +48,44 @@ body{
 }
 
 .navbar-list a:hover{
-    border-bottom: solid #FFFFFF 3px;
+    border-bottom: solid #305252 3px;
     text-decoration: none;
 }
 
 main{
     font-family: Poppins;
-    height: 1000px;
     background-color: #FFFFFF;
-    margin-top: 50px;
 }
 
 .links-cont{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 50px;
+    gap: 120px;
+    
+}
+
+.links-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-bottom: solid #305252 2px;
+    padding-bottom: 8px;
+}
+
+.links-card:hover{
+    border-bottom: solid white 2px;
+}
+
+.links-card a{
+    filter: invert(100%);
+}
+
+.links-card-text{
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 .sec{
@@ -66,8 +102,48 @@ main{
     gap: 15px;
 }
 
-#education{
-    background-color: white;
+#hero{
+    padding: 50px 30px 0px 30px;
+    margin: 0;
+    display: flex;
+}
+
+
+.hero-im{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cont-hero img{
+    height: 500px;
+    flex: 2;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 3;
+}
+.hero-div{
+    text-align: left;
+}
+
+#hero-name{
+    font-size: 40px;
+    font-weight: 900;
+    color: #305252;
+}
+
+#hero-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#links{
+    background-color: #305252;
+    color: white
 }
 
 .hor-card{
@@ -127,6 +203,7 @@ main{
     display: flex;
     flex-direction: column;
     text-decoration: none;
+    border: solid #373E40 0.5px;
 }
 
 .grid-card:hover{
@@ -146,6 +223,8 @@ main{
     font-size: 12px;
     height: 50px;
     text-decoration: none;
+    text-align: center;
+    font-weight: 400;
 }
 
 .grid-card-pub{
@@ -153,13 +232,25 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #77878B;
+    background-color: #305252;
     border-radius: 0px 0px 20px 20px;
     padding: 0px 30px 0px 30px;
     text-decoration: none;
 }
 
+#controlnet-im{
+    background-image:url("./assets/controlnet.png");
+}
+
 #hypnos-im{
     background-image:url("./assets/hypnos.png");
+}
+
+#coloru-im{
+    background-image:url("./assets/coloru.png");
+}
+
+#cyberbully-im{
+    background-image:url("./assets/cyberbully.png");
 }
 
