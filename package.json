@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "echo 'Deploy script will be implemented in Task 6'"
+    "deploy": "vite build && gh-pages -d dist"
   },
   "dependencies": {
     "gsap": "^3.15.0",
