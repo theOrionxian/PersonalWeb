@@ -1,0 +1,20 @@
+{
+  "name": "personal-web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "echo 'Deploy script will be implemented in Task 6'"
+  },
+  "dependencies": {
+    "gsap": "^3.15.0",
+    "three": "^0.186.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "vite": "^8.3.0"
+  }
+}
