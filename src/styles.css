@@ -201,5 +201,6 @@
     .links-cont{grid-template-columns:repeat(2,1fr);}
     .ledger-row{grid-template-columns:1fr;gap:8px;}
     .grid-cont{grid-template-columns:1fr;}
-    .navbar-list{gap:14px;}
+    .navbar{flex-wrap:wrap;height:auto;padding-block:12px;}
+    .navbar-list{gap:14px;flex-wrap:wrap;justify-content:flex-end;row-gap:6px;}
   }
